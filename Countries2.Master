@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Countries2.master.cs" Inherits="WebApplication1.Countries2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Countries</title>
+    <link rel="stylesheet" href="style.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <div class="header" id="myHeader">
+      <table>
+        <tr style="font-size:20px;">
+          <th><div id="txt"></div></th> 
+          <th style="color: rgb(8, 58, 222);">..........................................................................................</th>
+          <th> Countries </th>
+          <th><img src="Images/europe.png" alt="W3Schools.com" style="float:right"; width="40" height="25"></th>
+          <th style="color: rgb(8, 58, 222);">..................................................</th>
+          <th> Hello Sam, good evening </th>
+        </tr>
+      </table>
+        <!-- <h2 style="font-size:20px;"><h1 style = "float:right;">Countries</h1></h2> -->
+    </div>
+    <div class="header" id="myHeader">
+        <table>
+          <tr style="font-size:20px;">
+            <th> Countries </th> </tr>
+        </table>
+    </div>
+
+
+    <div class="header2" id="myHeader2">
+        <h1 style="font-size:15px;">create by Yahli Alton</h1>
+    </div>
+
+    
+</head>
+<body onload="startTime()">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+    
+    <script>
+    window.onscroll = function() {myFunction();}        
+        var header = document.getElementById("myHeader");
+        var header2 = document.getElementById("myHeader2");
+                
+        function myFunction() {
+          header.classList.add("sticky");
+          header2.classList.add("sticky2");
+        }
+    </script>
+
+<script>
+  function startTime() {
+    const today = new Date();
+    let h = today.getHours();
+    let m = today.getMinutes();
+    let s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+    setTimeout(startTime, 1000);
+  }
+  
+  function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+  }
+</script>
+
+</body>
+</html>
