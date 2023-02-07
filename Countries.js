@@ -7,7 +7,7 @@
     var phone = document.getElementById("phoneNum").value;
     var year = document.getElementById("Year").value;
     var ps = document.getElementById("ps").value;
-    if (uName.length < 2 || fName.length < 2 || lName.length < 2 || email.length < 2 || (!email.includes("@")) || (!email.includes(".")) || prefix.selectedIndex == 0 || isNaN(phone) || phone.length != 7 || isNaN(year) || year < 1900 || year > 2023 || ps.length < 2) {
+    if (uName.length < 2 || fName.length < 2 || lName.length < 2 || email.length < 2 || (!email.includes("@")) || (!email.includes(".")) || isNaN(phone) || phone.length != 7 || isNaN(year) || year < 1900 || year > 2023 || ps.length < 2) {
         if (uName.length < 2) {
             document.getElementById("mUname").value = "User name too short or doesn't exist";
             document.getElementById("mUname").style.display = "inline";
