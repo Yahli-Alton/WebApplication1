@@ -138,11 +138,11 @@
         </tr>
      </table>
           
-            <input type = "checkbox" name = "hobies" value = "LikePlayingVideoGames" />LikePlayingVideoGames &nbsp;&nbsp;&nbsp;
-            <input type = "checkbox" name = "hobies" value = "LikeTraveling" />LikeTraveling &nbsp;&nbsp;&nbsp;
-            <input type = "checkbox" name = "hobies" value = "LikeStudy" />LikeStudy &nbsp;&nbsp;&nbsp;
-            <input type = "checkbox" name = "hobies" value = "LikeToSleep" />LikeToSleep &nbsp;&nbsp;&nbsp;
-            <input type = "checkbox" name = "hobies" value = "LikeToprogram" />LikeToProgram &nbsp;&nbsp;&nbsp;
+            <input type = "checkbox" name = "hobies" value = "1" />LikePlayingVideoGames &nbsp;&nbsp;&nbsp;
+            <input type = "checkbox" name = "hobies" value = "2" />LikeTraveling &nbsp;&nbsp;&nbsp;
+            <input type = "checkbox" name = "hobies" value = "3" />LikeStudy &nbsp;&nbsp;&nbsp;
+            <input type = "checkbox" name = "hobies" value = "4" />LikeToSleep &nbsp;&nbsp;&nbsp;
+            <input type = "checkbox" name = "hobies" value = "5" />LikeToProgram &nbsp;&nbsp;&nbsp;
         <table>
         <tr>
             <td colspan="2" style="text-align: center;"> 
