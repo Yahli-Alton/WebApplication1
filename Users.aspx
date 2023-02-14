@@ -16,6 +16,13 @@
 
 <h4><%= msg %></h4>
 
-<br /><br /><br />
+<a href="query1.aspx">select *from usersTBl where city ='Tel Aviv'</a><br />
+<a href="query2.aspx">select UserName,FirstName,email from usersTBl</a><br />
+<a href="query3.aspx">select *from usersTBl where prefix ='054'</a><br />
+<a href="query4.aspx">select *from usersTBl where LastName like'a%'</a><br />
+
+
+
+<br /><br /><br /><br /><br />
 </div>
 </asp:Content>
