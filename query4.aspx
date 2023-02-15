@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="Style.css">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<div class = Users>
+<div> class = Users>
 
 <h3>Users Table</h3>
 <h2><%= sqlSelect %></h2>
