@@ -72,7 +72,6 @@ C:\Users\yahli\source\repos\WebApplication1\obj\Debug\WebApplication1.csproj.Cor
 C:\Users\yahli\source\repos\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
 C:\Users\yahli\source\repos\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\yahli\source\repos\WebApplication1\obj\Debug\WebApplication1.pdb
-C:\Users\yahli\OneDrive - Herzliya Schools\גישה מהירה\כיתה י'\תב א\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
 C:\Users\yahli\OneDrive - Herzliya Schools\גישה מהירה\כיתה י'\תב א\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
 C:\Users\yahli\OneDrive - Herzliya Schools\גישה מהירה\כיתה י'\תב א\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\yahli\OneDrive - Herzliya Schools\גישה מהירה\כיתה י'\תב א\WebApplication1\obj\Debug\WebApplication1.pdb
@@ -294,3 +293,4 @@ C:\Users\User\Documents\GitHub\WebApplication1\obj\Debug\WebApplication1.csproj.
 C:\Users\User\Documents\GitHub\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
 C:\Users\User\Documents\GitHub\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\User\Documents\GitHub\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\yahli\OneDrive - Herzliya Schools\גישה מהירה\כיתה י'\תב א\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache

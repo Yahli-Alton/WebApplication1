@@ -16,7 +16,7 @@
           <th> Countries </th>
           <th><img src="Images/europe.png" alt="W3Schools.com" style="float:right"; width="40" height="25"></th>
           <th style="color: rgb(8, 58, 222);">..................................................</th>
-          <th> Hello Sam, good evening </th>
+          <th> <%= loginMsg %> </th>
         </tr>
       </table>
         <!-- <h2 style="font-size:20px;"><h1 style = "float:right;">Countries</h1></h2> -->

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace WebApplication1
 {
-    public partial class Login : System.Web.UI.Page
+    public partial class register : System.Web.UI.Page
     {
         public string st = "no data received";
         public string sqlMsg = "";

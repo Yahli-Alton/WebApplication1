@@ -17,5 +17,15 @@ namespace WebApplication1
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+        void Session_Start(object sender, EventArgs e)
+        {
+            Session["uName"] = "guest";
+            Session["userFName"] = "guest";
+        }
+        void Session_End(object sender, EventArgs e)
+        {
+            Session["uName"] = "guest";
+            Session["userFName"] = "guest";
+        }
     }
 }
