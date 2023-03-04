@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="Style.css">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<form method ="post" runat ="server"></form>
+<form method ="post" runat ="server">
     <h1>Login Page</h1>
     <table style = "margin: 0px auto; text-align: center">
         <tr>
@@ -21,5 +21,7 @@
             <input type ="submit" name ="submit" value ="  submit   " /></td>
         </tr>
     </table>
+</form>
+    <% =msg %>
 
 </asp:Content>

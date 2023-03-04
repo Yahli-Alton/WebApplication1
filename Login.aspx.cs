@@ -10,8 +10,9 @@ namespace WebApplication1
 {
     public partial class Login : System.Web.UI.Page
     {
-        public string msg;
+        public string msg = "not submit";
         public string sqlLogin;
+        public string sqlLogin2;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Request.Form["submit"] != null) {
@@ -19,17 +20,37 @@ namespace WebApplication1
                 string password = Request.Form["pw"];
 
                 string fileName = "DatabaseOfCountries2.mdf";
-                string tableName = "usersTBl";
+                string tableName = "AdminsTBl";
+                string tableName2 = "usersTBl";
 
-                sqlLogin = "SELECT * FROM " + tableName + " WHERE uName = '" + username + "' AND pw = '" + password + "'";
+                if (username.Length < 2 || password.Length < 2) msg = "user name or password is incorrect";
+                else
+                {
+                    sqlLogin = "SELECT * FROM " + tableName + " WHERE UserName = '" + username + "' AND pw = '" + password + "'";
+                    sqlLogin2 = "SELECT * FROM " + tableName2 + " WHERE UserName = '" + username + "' AND pw = '" + password + "'";
 
-                DataTable table = Helper.ExecuteDataTable(fileName, sqlLogin);
-                int length = table.Rows.Count;
-                if (length == 0) msg = "user name or password is incorrect";
-                else {
-                    Session["uName"] = table.Rows[0]["uName"];
-                    Session["userFName"] = table.Rows[0]["fName"];
-                    Response.Redirect("CountriesMainPage.aspx");
+                    DataTable table = Helper.ExecuteDataTable(fileName, sqlLogin);
+                    if (table.Rows.Count == 1)
+                    {
+                        msg = "submit";
+                        Session["uName"] = table.Rows[0]["UserName"];
+                        Session["userFName"] = table.Rows[0]["UserName"];
+                        Session["Admin"] = "True";
+                        Response.Redirect("CountriesMainPage.aspx");
+                    }
+                    else
+                    {
+                        table = Helper.ExecuteDataTable(fileName, sqlLogin2);
+                        int length = table.Rows.Count;
+                        if (length == 0) msg = "user name or password is incorrect";
+                        else
+                        {
+                            msg = "submit";
+                            Session["uName"] = table.Rows[0]["UserName"];
+                            Session["userFName"] = table.Rows[0]["FirstName"];
+                            Response.Redirect("CountriesMainPage.aspx");
+                        }
+                    }
                 }
             }
         }

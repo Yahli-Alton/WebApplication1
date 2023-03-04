@@ -21,11 +21,13 @@ namespace WebApplication1
         {
             Session["uName"] = "guest";
             Session["userFName"] = "guest";
+            Session["Admin"] = "False";
         }
         void Session_End(object sender, EventArgs e)
         {
             Session["uName"] = "guest";
             Session["userFName"] = "guest";
+            Session["Admin"] = "False";
         }
     }
 }

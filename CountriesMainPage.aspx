@@ -8,8 +8,7 @@
 <div class = marginLeft>
     <a href="https://www.wikipedia.org/">Credit to Wikipedia</a>
     <br />
-    <a href="Users.aspx">Users</a>
-    <a href="Login.aspx">Log in</a>
+    <% =msg %>
     <ul>
         <li> <a href = "#israel">Israel</a></li>
         <li> <a href = "#uk">United Kingdom</a></li>
