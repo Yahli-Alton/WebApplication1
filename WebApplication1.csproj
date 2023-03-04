@@ -138,6 +138,7 @@
     <Content Include="Countries2.Master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
     <Content Include="register.aspx" />
     <Content Include="query1.aspx" />
     <Content Include="query2.aspx" />
@@ -220,6 +221,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="register.aspx.cs">
       <DependentUpon>register.aspx</DependentUpon>

@@ -5,8 +5,9 @@
     <link rel="stylesheet" href="Style.css">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<dev style = "margin: 0px auto; text-align: center">
 <form method ="post" runat ="server">
-    <h1>Login Page</h1>
+    <h3>Login Page</h3>
     <table style = "margin: 0px auto; text-align: center">
         <tr>
             <td>User Name</td>
@@ -22,6 +23,10 @@
         </tr>
     </table>
 </form>
-    <% =msg %>
+
+
+    <h1><% =msg %></h1>
+</dev>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
 </asp:Content>
