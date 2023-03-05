@@ -49,8 +49,8 @@ namespace WebApplication1
             }
 
             if (this.IsPostBack) {
-                string uName = Request.Form["uName"];
                 string fName = Request.Form["fName"];
+                Session["userFName"] = fName;
                 string lName = Request.Form["lName"];
                 string mail = Request.Form["email"];
                 string hobby = Request.Form["hobies"];
@@ -78,9 +78,9 @@ namespace WebApplication1
                 $"SET FirstName = '{fName}', LastName = '{lName}', email = '{mail}', YearBorn = {yBorn}, gender = '{gender}', prefix = '{prefix}', phone = '{phone}', country = '{country}', city = '{city}', " +
                         $"LikePlayingVideoGames = {LikePlayingVideoGames}, LikeTraveling = {LikeTraveling}, LikeStudy = {LikeStudy}, LikeToSleep = {LikeToSleep}, LikeToProgaram = {LikeToProgram}, pw = '{pw}' " + 
                         $"WHERE UserName = '{uName}'";
-                msg += sqlUpdate;
+                // msg += sqlUpdate;
                 Helper.DoQuery(fileName, sqlUpdate);
-                // Response.Redirect("CountriesMainPage.aspx");
+                Response.Redirect("CountriesMainPage.aspx");
             }
 
         }
