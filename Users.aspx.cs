@@ -18,6 +18,7 @@ namespace WebApplication1
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["Admin"] == "False") Response.Redirect("CountriesMainPage.aspx");
             string fileName = "DatabaseOfCountries2.mdf";
             string tableName = "usersTBI";
 
