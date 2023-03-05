@@ -399,7 +399,7 @@
         <table>
         <tr>
             <td colspan="2" style="text-align: center;"> 
-                <input type="submit" name="submit" value="    send    " /> 
+                <input type="submit" name="submit" value="    Update    " /> 
 
             </td>
 

@@ -48,6 +48,41 @@ namespace WebApplication1
 
             }
 
+            if (this.IsPostBack) {
+                string uName = Request.Form["uName"];
+                string fName = Request.Form["fName"];
+                string lName = Request.Form["lName"];
+                string mail = Request.Form["email"];
+                string hobby = Request.Form["hobies"];
+                string yBorn = Request.Form["Year"];
+                string gender = Request.Form["gender"];
+                string prefix = Request.Form["prefix"];
+                string phone = Request.Form["phoneNum"];
+                string country = Request.Form["country"];
+                string city = Request.Form["city"];
+                string pw = Request.Form["ps"];
+                int LikePlayingVideoGames = 0;
+                int LikeTraveling = 0;
+                int LikeStudy = 0;
+                int LikeToSleep = 0;
+                int LikeToProgram = 0;
+                if (hobby != null)
+                {
+                    if (hobby.Contains('1')) LikePlayingVideoGames = 1;
+                    if (hobby.Contains('2')) LikeTraveling = 1;
+                    if (hobby.Contains('3')) LikeStudy = 1;
+                    if (hobby.Contains('4')) LikeToSleep = 1;
+                    if (hobby.Contains('5')) LikeToProgram = 1;
+                }
+                sqlUpdate = $"UPDATE usersTBl " + 
+                $"SET FirstName = '{fName}', LastName = '{lName}', email = '{mail}', YearBorn = {yBorn}, gender = '{gender}', prefix = '{prefix}', phone = '{phone}', country = '{country}', city = '{city}', " +
+                        $"LikePlayingVideoGames = {LikePlayingVideoGames}, LikeTraveling = {LikeTraveling}, LikeStudy = {LikeStudy}, LikeToSleep = {LikeToSleep}, LikeToProgaram = {LikeToProgram}, pw = '{pw}' " + 
+                        $"WHERE UserName = '{uName}'";
+                msg += sqlUpdate;
+                Helper.DoQuery(fileName, sqlUpdate);
+                // Response.Redirect("CountriesMainPage.aspx");
+            }
+
         }
     }
 }
