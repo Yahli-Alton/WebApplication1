@@ -82,13 +82,16 @@ namespace WebApplication1
                     st = "user name has been taken";
                     sqlMsg = sqlSelect;
                 }
-                string sqlInsert = $"INSERT INTO {tableName}" +
-                    $" VALUES ('{uName}', '{fName}', '{lName}', '{mail}', {yBorn}, '{gender}', '{prefix}', '{phone}', '{country}', '{city}', " +
-                    $"{Play}, {travel}, {study}, {sleep}, {program}, '{pw}')";
-                st += sqlInsert;
-                Helper.DoQuery(fileName, sqlInsert);
-                st += " Succses";
-
+                else
+                {
+                    string sqlInsert = $"INSERT INTO {tableName}" +
+                        $" VALUES ('{uName}', '{fName}', '{lName}', '{mail}', {yBorn}, '{gender}', '{prefix}', '{phone}', '{country}', '{city}', " +
+                        $"{Play}, {travel}, {study}, {sleep}, {program}, '{pw}')";
+                    st += sqlInsert;
+                    Helper.DoQuery(fileName, sqlInsert);
+                    st += " Succses";
+                    Response.Redirect("CountriesMainPage.aspx");
+                }
             }
         }
     }

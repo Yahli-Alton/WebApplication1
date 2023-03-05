@@ -15,8 +15,8 @@ namespace WebApplication1
         public string sqlSelect = "";
 
         public string yBorn = "";
-        public string uName, fName, lName, email, prefix, phone, gender, pw;
-        public bool LikePlayingVideoGames, LikeTraveling, LikeStudy, LikeToSleep, LikeToProgaram;
+        public string uName, fName, lName, email, prefix, phone, gender, pw, country, city;
+        public bool LikePlayingVideoGames, LikeTraveling, LikeStudy, LikeToSleep, LikeToProgram;
         protected void Page_Load(object sender, EventArgs e)
         {
             string fileName = "DatabaseOfCountries2.mdf";
@@ -35,14 +35,16 @@ namespace WebApplication1
                 prefix = table.Rows[0]["prefix"].ToString();
                 phone = table.Rows[0]["phone"].ToString();
                 gender = table.Rows[0]["gender"].ToString();
+                country = table.Rows[0]["country"].ToString();
+                city = table.Rows[0]["city"].ToString();
+                pw = table.Rows[0]["pw"].ToString();
                 int yearBorn = Convert.ToInt32(table.Rows[0]["YearBorn"]);
                 yBorn = yearBorn.ToString();
-                bool LikePlayingVideoGames = (bool)table.Rows[0]["LikePlayingVideoGames"];        
-                bool LikeTraveling = (bool)table.Rows[0]["LikeTraveling"];
-                bool LikeStudy = (bool)table.Rows[0]["LikeStudy"];
-                bool LikeToSleep = (bool)table.Rows[0]["LikeToSleep"];
-                bool LikeToProgaram = (bool)table.Rows[0]["LikeToProgaram"];
-
+                LikePlayingVideoGames = (bool)table.Rows[0]["LikePlayingVideoGames"];
+                LikeTraveling = (bool)table.Rows[0]["LikeTraveling"];
+                LikeStudy = (bool)table.Rows[0]["LikeStudy"];
+                LikeToSleep = (bool)table.Rows[0]["LikeToSleep"];
+                LikeToProgram = (bool)table.Rows[0]["LikeToProgaram"];
 
             }
 
