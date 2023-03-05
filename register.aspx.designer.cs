@@ -10,7 +10,7 @@
 
 namespace WebApplication1
 {
-    public partial class Login
+    public partial class register
     {
     }
 }

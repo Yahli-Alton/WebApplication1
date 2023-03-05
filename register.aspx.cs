@@ -67,7 +67,7 @@ namespace WebApplication1
                 int sleep = 0;
                 int travel = 0;
                 int program = 0;
-                if (LikePlayingVideoGames) {st += "Playing Video Games, "; Play = 1;}
+                if (LikePlayingVideoGames) { st += "Playing Video Games, "; Play = 1; }
                 if (LikeStudy) { st += "study, "; study = 1; }
                 if (LikeToProgram) { st += "Program"; program = 1; }
                 if (LikeToSleep) { st += "sleep"; sleep = 1; }
