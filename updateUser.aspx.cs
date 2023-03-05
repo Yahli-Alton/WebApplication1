@@ -19,29 +19,29 @@ namespace WebApplication1
         public bool LikePlayingVideoGames, LikeTraveling, LikeStudy, LikeToSleep, LikeToProgaram;
         protected void Page_Load(object sender, EventArgs e)
         {
-            string fileName = "usersDB.mdf";
+            string fileName = "DatabaseOfCountries2.mdf";
             uName = Session["uName"].ToString();
-            string user = Session["user"].ToString();
             if (uName == "guest") Response.Redirect("CountriesMainPage.aspx");
-            sqlSelect = "SELECT * FROM usersTBI WHERE uName = '" + uName + "'";
+            sqlSelect = "SELECT * FROM usersTBl WHERE userName = '" + uName + "'";
             DataTable table = Helper.ExecuteDataTable(fileName, sqlSelect);
 
             int length = table.Rows.Count;
             if (length != 1) msg = "User Not found";
             else
             {
-                fName = table.Rows[0]["fName"].ToString();
-                lName = table.Rows[0]["lName"].ToString();
+                fName = table.Rows[0]["firstName"].ToString();
+                lName = table.Rows[0]["LastName"].ToString();
                 email = table.Rows[0]["email"].ToString();
                 prefix = table.Rows[0]["prefix"].ToString();
                 phone = table.Rows[0]["phone"].ToString();
                 gender = table.Rows[0]["gender"].ToString();
-                int yearBorn = table.Rows[0]["yearBorn"];
-                bool LikePlayingVideoGames = table.Rows[0]["LikePlayingVideoGames"];        
-                bool LikeTraveling = table.Rows[0]["LikeTraveling"];
-                bool LikeStudy = table.Rows[0]["LikeStudy"];
-                bool LikeToSleep = table.Rows[0]["LikeToSleep"];
-                bool LikeToProgaram = table.Rows[0]["LikeToProgaram"];
+                int yearBorn = Convert.ToInt32(table.Rows[0]["YearBorn"]);
+                yBorn = yearBorn.ToString();
+                bool LikePlayingVideoGames = (bool)table.Rows[0]["LikePlayingVideoGames"];        
+                bool LikeTraveling = (bool)table.Rows[0]["LikeTraveling"];
+                bool LikeStudy = (bool)table.Rows[0]["LikeStudy"];
+                bool LikeToSleep = (bool)table.Rows[0]["LikeToSleep"];
+                bool LikeToProgaram = (bool)table.Rows[0]["LikeToProgaram"];
 
 
             }

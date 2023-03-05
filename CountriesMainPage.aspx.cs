@@ -18,7 +18,10 @@ namespace WebApplication1
                 msg += "<a href = 'Login.aspx' > Log in</a>";
                 msg += "<a href = 'register.aspx' > register</a>";
             }
-            else msg += "<a href = 'Logout.aspx' > Log out</a>";
+            else {
+                msg += "<a href = 'Logout.aspx' > Log out</a>";
+                msg += "<a href = 'updateUser.aspx' > Update User</a>";
+            }
         }
     }
 }
