@@ -14,8 +14,10 @@ namespace WebApplication1
         {
             if (Session["Admin"] == "True")
                 msg += "<a href='Users.aspx'>Users</a>";
-            if (Session["uName"] == "guest")
+            if (Session["uName"] == "guest") {
                 msg += "<a href = 'Login.aspx' > Log in</a>";
+                msg += "<a href = 'register.aspx' > register</a>";
+            }
             else msg += "<a href = 'Logout.aspx' > Log out</a>";
         }
     }

@@ -35,6 +35,9 @@ height:500px;
 margin: 15px
 }
 .marginLeft {margin-left: 15px;}
+.marginRight {
+    margin-right: 15px;
+}
 .marginMiddle {
 
 }

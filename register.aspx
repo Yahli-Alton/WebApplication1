@@ -8,8 +8,10 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <div class = marginLeft>
     <br />
+    <a class = marginRight href="CountriesMainPage.aspx">Main page</a>
+    
     <br />
-    <h1/>Registration form<h1> 
+    <h1>Registration form</h1>
 <form method="post" runat="server" onsubmit ="return chkForm();">
     <table>
         <tr>
