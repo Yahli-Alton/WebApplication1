@@ -20,7 +20,7 @@ namespace WebApplication1
         {
             if (Session["Admin"] == "False") Response.Redirect("CountriesMainPage.aspx");
             string fileName = "DatabaseOfCountries2.mdf";
-            string tableName = "usersTBI";
+            string tableName = "usersTbl";
 
 
             DataTable table = Helper.ExecuteDataTable(fileName, sqlSelect);
