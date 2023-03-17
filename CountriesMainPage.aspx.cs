@@ -12,8 +12,10 @@ namespace WebApplication1
         public string msg = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["Admin"] == "True")
+            if (Session["Admin"] == "True") { 
                 msg += "<a href='Users.aspx'>Users</a>";
+                msg += "<a href='DeleteUser.aspx'>Delete User</a>";
+            }
             if (Session["uName"] == "guest") {
                 msg += "<a href = 'Login.aspx' > Log in</a>";
                 msg += "<a href = 'register.aspx' > register</a>";
