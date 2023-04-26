@@ -16,6 +16,8 @@ namespace WebApplication1
             // Code that runs on application startup
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            Application["counter"] = 0;
         }
         void Session_Start(object sender, EventArgs e)
         {

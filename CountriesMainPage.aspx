@@ -9,6 +9,9 @@
     <a href="https://www.wikipedia.org/">Credit to Wikipedia</a>
     <br />
     <% =msg %>
+    <br />
+    Users counter:
+    <%= Application["counter"]%>
     <ul>
         <li> <a href = "#israel">Israel</a></li>
         <li> <a href = "#uk">United Kingdom</a></li>

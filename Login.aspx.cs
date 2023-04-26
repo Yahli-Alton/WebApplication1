@@ -46,6 +46,9 @@ namespace WebApplication1
                         else
                         {
                             msg = "submit";
+                            Application.Lock();
+                            Application["counter"] = (int)Application["counter"] + 1;
+                            Application.UnLock();
                             Session["uName"] = table.Rows[0]["UserName"];
                             Session["userFName"] = table.Rows[0]["FirstName"];
                             Response.Redirect("CountriesMainPage.aspx");
