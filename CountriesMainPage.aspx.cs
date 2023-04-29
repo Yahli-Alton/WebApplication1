@@ -26,6 +26,7 @@ namespace WebApplication1
             {
                 msg += "<a href = 'Logout.aspx' > Log out</a>";
                 msg += "<a href = 'updateUser.aspx' > Update User</a>";
+                msg += "<a href = 'Survey.aspx' > Survey</a>";
             }
         }
     }

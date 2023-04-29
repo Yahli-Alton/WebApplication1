@@ -108,3 +108,6 @@ body {
     background-color: silver;
     font-weight: bold;
 }
+
+.tableIn {margin: 0px auto;}
+.td1 {width: 100px; padding-right: 10px;}

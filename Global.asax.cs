@@ -18,9 +18,14 @@ namespace WebApplication1
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             Application["counter"] = 0;
+            Application["q1"] = 0;
+            Application["q2"] = 0;
+            Application["q3"] = 0;
+            Application["q4"] = 0;
         }
         void Session_Start(object sender, EventArgs e)
         {
+            Session["voted"] = false;
             Session["uName"] = "guest";
             Session["userFName"] = "guest";
             Session["Admin"] = "False";
@@ -30,6 +35,7 @@ namespace WebApplication1
             Session["uName"] = "guest";
             Session["userFName"] = "guest";
             Session["Admin"] = "False";
+            Session["voted"] = false;
         }
     }
 }
