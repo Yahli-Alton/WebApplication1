@@ -10,6 +10,8 @@
     <br />
     <% =msg %>
     <br />
+    <a href="photosGallery.aspx">Photos Gallery</a>
+    <br />
     Users counter:
     <%= Application["counter"]%>
     <ul>

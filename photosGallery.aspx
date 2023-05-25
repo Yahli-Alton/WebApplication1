@@ -16,20 +16,18 @@
         <td><img class="imgCell" src = "Images/p13.svg" onmouseover="picShow('Images/p13.svg')"/></td>
         <td><img class="imgCell" src = "Images/p14.svg" onmouseover="picShow('Images/p14.svg')"/></td>
     </tr>
-    <tr></tr>
+
     <tr>
         <td><img class="imgCell" src = "Images/p21.svg" onmouseover="picShow('Images/p21.svg')"/></td>
-        <td rowspan = "2" colpsan = "2">
+        <td rowspan = "2" colspan = "2">
             <img class="BigPicImg" id="bigPic" src="Images/p11.svg"/>
         </td>
         <td><img class="imgCell" src = "Images/p24.svg" onmouseover="picShow('Images/p24.svg')"/></td>
     </tr>
-    <tr></tr>
     <tr>
         <td><img class="imgCell" src = "Images/p31.svg" onmouseover="picShow('Images/p31.svg')"/></td>
         <td><img class="imgCell" src = "Images/p34.svg" onmouseover="picShow('Images/p34.svg')"/></td>
     </tr>
-    <tr></tr>
     <tr>
         <td><img class="imgCell" src = "Images/p41.svg" onmouseover="picShow('Images/p41.svg')"/></td>
         <td><img class="imgCell" src = "Images/p42.svg" onmouseover="picShow('Images/p42.svg')"/></td>
