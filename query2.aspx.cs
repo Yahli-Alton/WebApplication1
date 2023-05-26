@@ -10,6 +10,7 @@ namespace WebApplication1
 {
     public partial class query2 : System.Web.UI.Page
     {
+
         public string st = "";
         public string msg = "";
 
@@ -17,6 +18,7 @@ namespace WebApplication1
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["Admin"] == "False") Response.Redirect("CountriesMainPage.aspx");
             string fileName = "DatabaseOfCountries2.mdf";
             string tableName = "usersTBI";
 
