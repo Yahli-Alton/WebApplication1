@@ -14,6 +14,8 @@
 
 
 </table>
+<a href="CountriesMainPage.aspx">Main Page</a>
+<br />
 
 <h4><%= msg %></h4>
 </asp:Content>

@@ -31,7 +31,7 @@ Jordan to the east, and Egypt to the southwest; it is also bordered by the Pales
 Strip to the east and west, respectively. Tel Aviv is the economic and technological center of the country, while its seat of 
 government is in its proclaimed capital of Jerusalem, although Israeli sovereignty over East Jerusalem is unrecognized.
     </pre>
-    <a href="Israel.aspx">Read more</a>
+    <a href="https://en.wikipedia.org/wiki/Israel">Read more</a>
     <img class = "F-UK-FR-IT" src="Images/Flag_of_the_United_Kingdom.svg">
     <img class = "symbol" src="Images/Royal_Coat_of_Arms_of_the_United_Kingdom.svg.png">
     <h1 id = "us">United Kingdom</h1>
@@ -44,7 +44,7 @@ and many smaller islands within the British Isles. Northern Ireland shares a lan
 the United Kingdom is surrounded by the Atlantic Ocean, the North Sea, the English Channel, the Celtic Sea and the Irish Sea.
 The total area of the United Kingdom is 242,495 square kilometres, with an estimated 2020 population of more than 67 million people.
     </pre>
-    <a href="UK.aspx">Read more</a>
+    <a href="https://en.wikipedia.org/wiki/United_Kingdom">Read more</a>
     <img class = "FUS" src="Images/Flag_of_the_United_States.svg">
     <img class = "symbol" src="Images/Greater_coat_of_arms_of_the_United_States.svg.png">
     <h1 id = "fr">United States</h1>
@@ -56,7 +56,7 @@ The United States shares land borders with Canada to its north and with Mexico t
 the Bahamas, Cuba, Russia, and other nations.[k] With a population of over 331 million,[e] it is the third most populous 
 country in the world. The national capital is Washington, D.C., and the most populous city and financial center is New York City.
     </pre>
-    <a href="US.aspx">Read more</a>
+    <a href="https://en.wikipedia.org/wiki/United_States">Read more</a>
     <img class = "F-UK-FR-IT" src="Images/Flag_of_France.svg">
     <img class = "symbol" src="Images/Armoiries_république_française.svg.png">
     <h1 id = "it">France</h1>
@@ -83,7 +83,7 @@ and shares land borders with France, Switzerland, Austria, Slovenia and the encl
 Italy has a territorial exclave in Switzerland, Campione. With over 60 million inhabitants, Italy is the third-most populous member 
 state of the European Union.
 </pre>
-    <a href="Italy.aspx">Read more</a>
+    <a href="https://en.wikipedia.org/wiki/France">Read more</a>
     <pre>
 
 
