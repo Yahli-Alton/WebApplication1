@@ -90,6 +90,11 @@ namespace WebApplication1
                     st += sqlInsert;
                     Helper.DoQuery(fileName, sqlInsert);
                     st += " Succses";
+                    Application.Lock();
+                    Application["counter"] = (int)Application["counter"] + 1;
+                    Application.UnLock();
+                    Session["uName"] = uName;
+                    Session["userFName"] = fName;
                     Response.Redirect("CountriesMainPage.aspx");
                 }
             }
